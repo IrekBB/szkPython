@@ -1,0 +1,93 @@
+"""
+ Uzupełnij kod klasy Zbiór o przecinanie (iloczyn) i odejmowanie zbiorów.
+"""
+
+class ZbiorLitery:
+    def __init__(self):
+         self.zbior = [False for _ in range(26)]
+
+    def dodaj(self,c):
+         i = do_indeksu(c)
+         if i in range(25):
+              self.zbior[i] = True
+         else:
+              print("[Błąd] Znak spoza dozwolonego alfabetu:",c, i)
+    
+    def __add__(self, x2):
+         suma = ZbiorLitery()
+         for i in range(26):
+              suma.zbior[i] = self.zbior[i] or x2.zbior[i] 
+         return suma
+    
+    def __mul__ (self, x2):
+         przeciecie = ZbiorLitery()
+         for i in range(26):
+              przeciecie.zbior[i] = self.zbior[i] and x2.zbior[i]
+         return przeciecie      
+
+    def __sub__(self, x2):
+         roznica = ZbiorLitery()
+         for i in range(26):
+              if self.zbior[i] and x2.zbior[i] == False: 
+                   roznica.zbior[i] = self.zbior[i] or x2.zbior[i]
+              else:
+                   roznica.zbior[i] = False
+                       
+         return roznica       
+
+    def usun(self,c):
+         i = do_indeksu(c)
+         print ("Usuwam:", c.upper())
+         if i != -1 and self.zbior[i] == True:
+              self.zbior[i] = False
+         else:
+              print("\n[Błąd] Znak nie należy do zbioru:", c)
+    
+    def wypisz(self, s):
+         print(s, " = {", end=" ")
+         for i in range(26):
+              if self.zbior[i] == True:
+                print (chr(i+65) + " " , end=" ")
+         print("}\n")
+
+def do_indeksu(c):   # Konwersja znaku 'c' na wartość 0..25 dla liter z zakresu A..Z
+     if (c >= 'A' and c <='Z') or (c>='a' and c<='z'):
+        return ord(c.upper()) - ord('A')  # Zamiana na adużą literę realizowana przez metodę  upper
+     else:
+        return -1   # Błąd zakresu (znak spoza alfabetu)
+
+
+def main(args):
+     z1 = ZbiorLitery()
+     z2 = ZbiorLitery()
+     
+     z1.dodaj('A')
+     z1.dodaj('K')
+     z1.dodaj("k")
+     z1.dodaj("M")
+     z2.dodaj("B")
+     z2.dodaj("K")
+     z2.dodaj("R")
+
+     z1.wypisz("z1")
+     z2.wypisz("z2")
+     
+     z1.usun('a')
+     z1.usun('X')
+     z1.wypisz("z1")
+     (z1 + z2). wypisz("z1+z2")
+
+     (z1*z2).wypisz("z1*z2")
+     (z1-z2).wypisz("z1-z2")
+    
+     (z1-z2).wypisz("z1-z2")
+
+if __name__=="__main__":
+     import sys
+     sys.exit(main(sys.argv))
+
+      
+
+
+       
+      

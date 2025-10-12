@@ -1,0 +1,22 @@
+def odwroc(tekst):
+    if len(tekst)==0:
+        return " "
+    else:
+        return tekst[-1] + odwroc(tekst[:len(tekst) -1 ])
+
+def odwrocP(tekst, par=" "):
+    if len(tekst)==0:
+        return par
+    else:
+        return odwrocP(tekst[:len(tekst) -1], par+tekst[-1])
+
+
+def main(args):
+    tekst = input("Podaj tekst: ")
+    print("Tekst nie odwrócony: ", tekst)
+    print ("Tekst odwrócony: ", odwroc(tekst))
+    print ("Tekst odwrócony z parametrem: ", odwrocP(tekst))
+
+if __name__=="__main__":
+    import sys
+    sys.exit(main(sys. argv))

@@ -1,0 +1,7 @@
+Zmodyfikuj nieco kod skryptu lista2.py i napisz funkcje realizujące następujące zadania:
+- Zwrócenie liczby elementów listy - załóżmy, że nie użyliśmy pola dlugosc przechowującego 
+  aktualną liczbę rekordów
+- Zwrócenie k-tego elementu listy
+- Usunięcie k-tego elementu listy
+
+ 

@@ -1,3 +1,4 @@
+import sys
 epsilon=0.0001
 
 def f(x): # Funkcja f(x) = 3x^2 – 2
@@ -10,5 +11,11 @@ def zero(x0):
        return x0
    else:
        return zero( x0 - f(x0) / fp(x0) )
- # Testujemy:
-print("Zero funkcji 3x*x-2 wynosi ", zero(1) ) # Wynik 0.8164965986394558
+ 
+def main(sys):
+   # Testujemy:
+   print("Zero funkcji 3x*x-2 wynosi ", zero(1) ) # Wynik 0.8164965986394558
+
+if __name__=="__main__":
+   sys.exit(main(sys.argv))
+

@@ -22,7 +22,7 @@ def main(args):
     plik_in_out.write("THE DOORS:")
     print ("Dopisuję do ", nowyplik," nowy napis: 'This is the end, my only friend...' oraz znak nowej linii")
     plik_in_out.write("This is the end, my only friend...\n")
-    # w tym miejscu nic niema bo wskaźnik pliku ustawiony jest na koniec, po ostatnim zapisie, chyba, że plik_in_out.seek(0)
+    # w tym miejscu nic niema bo wskaźnik pliku ustawiony jest na koniec, po ostatnim zapisie, chyba, że plik_in_out.seek(0,0)
     print("Czytam dalej:", plik_in_out.readline(), end="")
     plik_in_out.close()
     print("\nOtwietramy ponownie plik i sprawdzamy zawartość")

@@ -1,0 +1,56 @@
+May  2 00:00:01 Mac-mini-Piotr com.apple.xpc.launchd[1] (com.apple.mdworker.shared.0A000000-0300-0000-0000-000000000000[16897]): Service exited due to SIGKILL | sent by mds[99]
+May  2 00:00:01 Mac-mini-Piotr com.apple.xpc.launchd[1] (com.apple.mdworker.shared.08000000-0200-0000-0000-000000000000[16899]): Service exited due to SIGKILL | sent by mds[99]
+May  2 00:01:35 Mac-mini-Piotr fud[16919]: objc[16919]: Class AMSupportURLConnectionDelegate is implemented in both /usr/lib/libamsupport.dylib and /System/Library/PrivateFrameworks/MobileAccessoryUpdater.framework/Support/fud. One of the two will be used. Which one is undefined.
+May  2 00:01:35 Mac-mini-Piotr fud[16919]: objc[16919]: Class AMSupportURLSession is implemented in both /usr/lib/libamsupport.dylib and /System/Library/PrivateFrameworks/MobileAccessoryUpdater.framework/Support/fud. One of the two will be used. Which one is undefined.
+May  2 00:01:47 Mac-mini-Piotr com.apple.xpc.launchd[1] (com.apple.mdworker.shared.03000000-0300-0000-0000-000000000000[16914]): Service exited due to SIGKILL | sent by mds[99]
+May  2 00:01:47 Mac-mini-Piotr com.apple.xpc.launchd[1] (com.apple.mdworker.shared.10000000-0700-0000-0000-000000000000[16916]): Service exited due to SIGKILL | sent by mds[99]
+May  2 00:01:47 Mac-mini-Piotr com.apple.xpc.launchd[1] (com.apple.mdworker.shared.0A000000-0500-0000-0000-000000000000[16911]): Service exited due to SIGKILL | sent by mds[99]
+May  2 00:01:47 Mac-mini-Piotr com.apple.xpc.launchd[1] (com.apple.mdworker.shared.08000000-0400-0000-0000-000000000000[16912]): Service exited due to SIGKILL | sent by mds[99]
+May  2 00:01:47 Mac-mini-Piotr com.apple.xpc.launchd[1] (com.apple.mdworker.shared.02000000-0600-0000-0000-000000000000[16910]): Service exited due to SIGKILL | sent by mds[99]
+May  2 00:01:47 Mac-mini-Piotr com.apple.xpc.launchd[1] (com.apple.mdworker.shared.07000000-0000-0000-0000-000000000000[16913]): Service exited due to SIGKILL | sent by mds[99]
+	ASL Module "com.apple.cdscheduler" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+May  2 00:30:04 Mac-mini-Piotr syslogd[69]: Configuration Notice:
+	ASL Module "com.apple.install" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+May  2 00:30:04 Mac-mini-Piotr syslogd[69]: Configuration Notice:
+	ASL Module "com.apple.authd" sharing output destination "/var/log/asl" with ASL Module "com.apple.asl".
+	Output parameters from ASL Module "com.apple.asl" override any specified in ASL Module "com.apple.authd".
+May  2 00:30:04 Mac-mini-Piotr syslogd[69]: Configuration Notice:
+	ASL Module "com.apple.authd" sharing output destination "/var/log/system.log" with ASL Module "com.apple.asl".
+	Output parameters from ASL Module "com.apple.asl" override any specified in ASL Module "com.apple.authd".
+May  2 00:30:04 Mac-mini-Piotr syslogd[69]: Configuration Notice:
+	ASL Module "com.apple.authd" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+May  2 00:30:04 Mac-mini-Piotr syslogd[69]: Configuration Notice:
+	ASL Module "com.apple.eventmonitor" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+May  2 00:30:04 Mac-mini-Piotr syslogd[69]: Configuration Notice:
+	ASL Module "com.apple.mail" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+May  2 00:30:04 Mac-mini-Piotr syslogd[69]: Configuration Notice:
+	ASL Module "com.apple.performance" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+May  2 00:30:04 Mac-mini-Piotr syslogd[69]: Configuration Notice:
+	ASL Module "com.apple.iokit.power" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+May  2 00:30:04 Mac-mini-Piotr syslogd[69]: Configuration Notice:
+	ASL Module "com.apple.contacts.ContactsAutocomplete" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+May  2 00:30:04 Mac-mini-Piotr syslogd[69]: Configuration Notice:
+	ASL Module "com.apple.mkb" sharing output destination "/private/var/log/keybagd.log" with ASL Module "com.apple.mkb.internal".
+	Output parameters from ASL Module "com.apple.mkb.internal" override any specified in ASL Module "com.apple.mkb".
+May  2 00:30:04 Mac-mini-Piotr syslogd[69]: Configuration Notice:
+	ASL Module "com.apple.mkb" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+May  2 00:30:04 Mac-mini-Piotr syslogd[69]: Configuration Notice:
+	ASL Module "com.apple.AddressBookLegacy" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+May  2 00:30:04 Mac-mini-Piotr syslogd[69]: Configuration Notice:
+	ASL Module "com.apple.MessageTracer" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+May  2 00:30:04 Mac-mini-Piotr syslogd[69]: Configuration Notice:
+	ASL Module "com.apple.clouddocs" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+May  2 00:30:39 Mac-mini-Piotr syslogd[69]: ASL Sender Statistics
+May  2 00:30:52 Mac-mini-Piotr com.apple.xpc.launchd[1] (com.apple.mdworker.shared.10000000-0200-0000-0000-000000000000[17071]): Service exited due to SIGKILL | sent by mds[99]

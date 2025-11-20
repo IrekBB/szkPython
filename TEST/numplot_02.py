@@ -20,7 +20,11 @@ def main(args):
              ms=10,       # rozmiar markera
              linewidth = '1',)  # grubość linii
     plt.show()
-
+"""
+[:, 1:3] in Python is a slicing operation, typically used on multi-dimensional objects like NumPy
+arrays or Pandas DataFrames. It selects all rows (due to the : before the comma) and a specific slice 
+of columns (columns with index 1 and 2, as the slice is 1:3, which includes the start but excludes the end index). 
+"""
 
 if __name__=="__main__":
     import sys

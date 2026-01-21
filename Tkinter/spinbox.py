@@ -1,27 +1,20 @@
 import tkinter as tk
-import sys
 
-class App(tk.Tk):
-    def __init__(self,*args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.title("Spinbox")
-        self.geometry("200x50")
-        self.resizable(width=True, height=False)
-        self.my_double_var = tk.DoubleVar() 
-        result_label=tk.Label(self, textvariable=self.my_double_var)
-        result_label.pack()
-        my_spinbox = tk.Spinbox(self,
-                                from_=0.5,
-                                to=52.0,
-                                increment=.01,
-                                textvariable=self.my_double_var,
-                                )
-        my_spinbox.pack()
-def main(args):
-    app = App()
-    app.mainloop()
+root = tk.Tk()
+root.title("Tkinter Spinbox")
+root.geometry("200x80")
 
-if __name__=="__main__":
-    sys.exit(main(sys.argv))
+spinbox_var = tk.StringVar(value="0")
+spinbox = tk.Spinbox(
+    root,
+    from_=-10,
+    to=10,
+    textvariable=spinbox_var,
+)
+spinbox.pack(padx=5, pady=5, fill="x")
 
+# A helper label to show the selected value
+label = tk.Label(root, textvariable=spinbox_var)
+label.pack(padx=5, pady=5, fill="x")
 
+root.mainloop()
